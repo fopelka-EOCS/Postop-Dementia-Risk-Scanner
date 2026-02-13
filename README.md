@@ -1,12 +1,17 @@
-# Postop-Dementia-Risk-Scanner
-**Objective:** An AI-enhanced SMART on FHIR application to identify high-risk surgical candidates for Postoperative Delirium (POD) and Dementia.
+Project Name: PostOp-Dementia-Risk-Scanner
 
-## Overview
-As the surgical population ages, the risk of postoperative cognitive decline increases. This tool queries FHIR-based Electronic Health Records (EHR) to flag patients based on:
-* **Structured Data:** Age, Medications (Beers Criteria), and Comorbidities.
-* **Unstructured Data:** Natural Language Processing (NLP) of H&P notes to extract Mini-Cog scores and Frailty indices.
+1. Clinical Objective
+To provide real-time risk stratification for Postoperative Delirium (POD) and Cognitive Decline (POCD) in the elderly surgical population using FHIR-based EHR data.
 
-## Tech Stack
-* **Language:** Python 3.x
-* **Standard:** HL7 FHIR (R4)
-* **API:** SMART on FHIR / CDS Hooks
+2. The "Risk Logic" (The Phenotype)
+Since many scores aren't structured, the app will use the following logic to "scrape" the record:
+
+<img width="702" height="370" alt="image" src="https://github.com/user-attachments/assets/5f77cc02-4b19-44fc-ba6f-50093d4c5e9b" />
+
+
+3. Tech Stack Language:
+  * Python 3.x
+
+  * API Standard: HL7 FHIR (R4)
+
+  * Framework: SMART on FHIR / CDS Hooks
