@@ -9,8 +9,8 @@ Since many scores aren't structured, the app will use the following logic to "sc
 <img width="702" height="370" alt="image" src="https://github.com/user-attachments/assets/5f77cc02-4b19-44fc-ba6f-50093d4c5e9b" />
 
 
-3. Tech Stack Language:
-  * Python 3.x
+3. Tech Stack 
+  * Language: Python 3.x
 
   * API Standard: HL7 FHIR (R4)
 
