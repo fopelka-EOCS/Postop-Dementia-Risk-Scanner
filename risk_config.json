@@ -18,6 +18,14 @@
     {"name": "Zolpidem", "rxcui": "11124", "weight": 3},
     {"name": "Oxybutynin", "rxcui": "7804", "weight": 3}
   ],
+  "frailty_icd10_codes": [
+    {"code": "R54", "name": "Age-related physical debility (Frailty)", "weight": 4},
+    {"code": "M62.84", "name": "Sarcopenia (Muscle Loss)", "weight": 3},
+    {"code": "R62.7", "name": "Adult failure to thrive", "weight": 4},
+    {"code": "Z91.81", "name": "History of falling", "weight": 2},
+    {"code": "R26.2", "name": "Difficulty in walking", "weight": 2},
+    {"code": "E46", "name": "Unspecified protein-energy malnutrition", "weight": 3}
+  ],
   "fhir_endpoints": {
     "sandbox": "https://hapi.fhir.org/baseR4"
   }
