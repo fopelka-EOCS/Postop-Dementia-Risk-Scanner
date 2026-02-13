@@ -1,0 +1,18 @@
+{
+  "high_risk_thresholds": {
+    "age": 75,
+    "estimated_procedure_minutes": 180
+  },
+  "delirium_risk_meds": [
+    {"name": "Diphenhydramine", "rxcui": "3498", "weight": 3},
+    {"name": "Hydroxyzine", "rxcui": "5553", "weight": 3},
+    {"name": "Lorazepam", "rxcui": "6470", "weight": 2},
+    {"name": "Diazepam", "rxcui": "3322", "weight": 3},
+    {"name": "Alprazolam", "rxcui": "596", "weight": 2},
+    {"name": "Meperidine", "rxcui": "6754", "weight": 3},
+    {"name": "Cyclobenzaprine", "rxcui": "25480", "weight": 2}
+  ],
+  "fhir_endpoints": {
+    "sandbox": "https://hapi.fhir.org/baseR4"
+  }
+}
