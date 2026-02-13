@@ -10,7 +10,13 @@
     {"name": "Diazepam", "rxcui": "3322", "weight": 3},
     {"name": "Alprazolam", "rxcui": "596", "weight": 2},
     {"name": "Meperidine", "rxcui": "6754", "weight": 3},
-    {"name": "Cyclobenzaprine", "rxcui": "25480", "weight": 2}
+    {"name": "Cyclobenzaprine", "rxcui": "25480", "weight": 2},
+    {"name": "Haloperidol", "rxcui": "5008", "weight": 3},
+    {"name": "Famotidine", "rxcui": "4278", "weight": 1},
+    {"name": "Promethazine", "rxcui": "8745", "weight": 3},
+    {"name": "Carisoprodol", "rxcui": "2101", "weight": 2},
+    {"name": "Zolpidem", "rxcui": "11124", "weight": 3},
+    {"name": "Oxybutynin", "rxcui": "7804", "weight": 3}
   ],
   "fhir_endpoints": {
     "sandbox": "https://hapi.fhir.org/baseR4"
