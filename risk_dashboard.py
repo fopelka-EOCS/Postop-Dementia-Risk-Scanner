@@ -80,5 +80,3 @@ def run_surgical_risk_dashboard(patient_id):
 # EXECUTE
 run_surgical_risk_dashboard("example")
 
-# RUN FOR PETER
-run_surgical_risk_dashboard("example")
