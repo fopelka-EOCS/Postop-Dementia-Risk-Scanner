@@ -1,22 +1,13 @@
 import requests
+import json  # Line 1: Import the JSON library
 
-# 1. CLINICAL CONFIGURATION (In a real app, this loads from risk_config.json)
-# We define our 'Red Flags' here to keep the logic clean.
-RISK_MEDS = {
-    "3498": {"name": "Diphenhydramine", "weight": 3},
-    "6470": {"name": "Lorazepam", "weight": 2},
-    "3322": {"name": "Diazepam", "weight": 3},
-    "5008": {"name": "Haloperidol", "weight": 3},
-    "4278": {"name": "Famotidine", "weight": 1}
-}
+# Line 2 & 3: Open the 'Surgical Plan' file and load the data
+with open('risk_config.json', 'r') as config_file:
+    config = json.load(config_file)
 
-FRAILTY_ICD10 = {
-    "R54": {"name": "Physical Frailty", "weight": 4},
-    "M62.84": {"name": "Sarcopenia", "weight": 3},
-    "Z91.81": {"name": "History of Falls", "weight": 2},
-    "R62.7": {"name": "Failure to Thrive", "weight": 4}
-}
-
+# Now, instead of hard-coding, we pull the lists from the 'config' variable
+RISK_MEDS = {med['rxcui']: med for med in config['delirium_risk_meds']}
+FRAILTY_ICD10 = {diag['code']: diag for diag in config['frailty_icd10_codes']}
 KEYWORDS = ["Dementia", "Confusion", "Mini-Cog", "Frailty", "Fall", "MOCA"]
 
 def run_surgical_risk_dashboard(patient_id):
